@@ -1,0 +1,210 @@
+/* Custom CSS untuk tampilan website */
+/* Gaya untuk Jumbotron */
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8)80%), url('../img/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 200px 0;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.jumbotron p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.jumbotron .btn {
+    font-size: 16px;
+    padding: 12px 30px;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero .row::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.project-card .card-text {
+    opacity: 0;
+    transform: translateY(70px);
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .card-text {
+    opacity: 1;
+}
+
+.project-card {
+    overflow: hidden;
+    position: relative;
+}
+
+.project-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+}
+
+.project-card .card-body {
+    z-index: 1;
+}
+
+.img-fluid{
+    max-width: 100%;
+}
+
+/* Responsif Tab*/
+@media (max-width: 900px) {
+    .jumbotron {
+        padding: 150px 0;
+    }
+
+    .jumbotron h1 {
+        font-size: 36px;
+    }
+
+    .jumbotron p {
+        font-size: 20px;
+    }
+
+    .jumbotron .btn {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+
+    .project-item {
+        flex-direction: column;
+    }
+
+    .project-item-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .img-fluid{
+        width: 320px;
+    }
+}
+
+/* Responsif Hp*/
+@media (max-width: 420px) {
+    .jumbotron {
+        padding: 10px 0;
+    }
+
+    .jumbotron h1 {
+        font-size: 36px;
+    }
+
+    .jumbotron p {
+        font-size: 20px;
+    }
+
+    .jumbotron .btn {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+
+    .project-item {
+        flex-direction: column;
+    }
+
+    .project-item-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .img-fluid{
+        width: 300px;
+    }
+    
+    .profile1{
+        transform: translate(-130px, -100px);
+    }
+
+    .profile2{
+        transform: translate(160px, -100px);
+    }
+
+    .profile1-teks{
+        transform: translate(60px, 20px);
+        text-align: center;
+    }
+
+    .profile2-teks{
+        transform: translate(-30px, 20px);
+        text-align: center;
+    }    
+}
+
+/* Responsif Hp*/
+@media (max-width: 300px) {
+    .jumbotron {
+        padding: 10px 0;
+    }
+
+    .jumbotron h1 {
+        font-size: 36px;
+    }
+
+    .jumbotron p {
+        font-size: 20px;
+    }
+
+    .jumbotron .btn {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+
+    .project-item {
+        flex-direction: column;
+    }
+
+    .project-item-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .img-fluid{
+        width: 250px;
+    }
+    
+    .profile1{
+        transform: translate(-80px, -70px);
+    }
+
+    .profile2{
+        transform: translate(120px, -70px);
+    }
+
+    .profile1-teks{
+        transform: translate(35px, 20px);
+        text-align: center;
+    }
+
+    .profile2-teks{
+        transform: translate(-25px, 20px);
+        text-align: center;
+    }    
+}

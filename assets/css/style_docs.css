@@ -1,0 +1,83 @@
+.code-box {
+    position: relative;
+}
+
+.code-box pre {
+    white-space: pre-wrap;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.code-box .btn {
+    margin-top: 10px;
+}
+
+.custom-toast {
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    z-index: 9999;
+}
+
+.nav-section .nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.sub-nav {
+    margin-left: 20px;
+}
+
+.sub-sec {
+    margin-left: 50px;
+}
+
+.navbar-fixed {
+    position: sticky;
+    top: 0;
+    width: 30%;
+    z-index: 1;
+}
+
+.navbar-vertical {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 310px;
+    /* padding-top: 70px; */
+}
+
+.navbar-vertical .navbar-nav {
+    width: 100%;
+}
+
+.navbar-vertical .nav-link {
+    color: #212529;
+}
+
+.navbar-vertical .nav-link:hover {
+    color: #dc3545;
+}
+
+#documentations {
+    padding-top: 60px;
+}
+
+#sectionContent {
+    margin-top: 60px;
+}
+
+.section-content {
+    padding-top:60px;
+    /* Atur sesuai kebutuhan */
+}
+
+#sectionNavbar {
+    position: sticky;
+    top: 50px; /* Jarak antara navbar atas dengan konten */
+    bottom: 20px;
+    height: calc(100vh - 70px); /* Tinggi navbar agar sesuai dengan tinggi viewport dikurangi jarak atas */
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 200;
+}

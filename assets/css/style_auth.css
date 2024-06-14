@@ -1,0 +1,29 @@
+/* CSS for Register Page */
+
+.text-black {
+    color: #000;
+}
+
+.small {
+    font-size: 12px;
+}
+.box{
+    margin: 0 auto;
+    width: 91%;
+    height: auto;
+}
+
+.reg-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+}
+
+.reg-card .card-body {
+    z-index: 1;
+}
